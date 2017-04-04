@@ -1,0 +1,40 @@
+h1 {
+  padding-top: 75px;
+  padding-bottom: 70px;
+}
+#field {
+  height: 55px;
+  width: 250px;
+  background-color: rgb(250, 250, 250);
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+#total {
+  font-size: 30px;
+}
+#calculator {
+  color: white;
+  background-color: rgb(104, 107, 114);
+  height: 275px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7px;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+a.btn-primary {
+  margin: 5px;
+  width: 2.7vw;
+  height: 2.7vw;
+}
+a.btn-danger {
+  margin: 5px;
+  height: 2.7vw;
+  width: 6.3vw;
+  padding-right: 3px;
+  padding-left: 3px;
+}
