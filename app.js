@@ -2,7 +2,7 @@ $(document).ready(function() {
 //Assign total to an empty string that can be added to as the user inputs numbers and operators
 var total = '';
 //Define function that will take input from buttons
-function write(val) {
+function displayValues(val) {
   //Concatenate value from button with total
   total += val;
   //Check if total fits and display it
@@ -14,51 +14,10 @@ function write(val) {
 }
 }
 //Onclick events that call the write function to add whatever is on the button to the total
-$('#seven').click(function() {
-  write(7);
+$('.btn-primary').on('click', function() {
+      displayValues($(this).data('value'));
 });
-$('#eight').click(function() {
-  write(8);
-});
-$('#nine').click(function() {
-  write(9);
-});
-$('#divide').click(function() {
-  write('/');
-});
-$('#four').click(function() {
-  write(4);
-});
-$('#five').click(function() {
-  write(5);
-});
-$('#six').click(function() {
-  write(6);
-});
-$('#times').click(function() {
-  write('*');
-});
-$('#one').click(function() {
-  write(1);
-});
-$('#two').click(function() {
-  write(2);
-});
-$('#three').click(function() {
-  write(3);
-});
-$('#minus').click(function() {
-  write('-');
-});
-$('#zero').click(function() {
-  write(0);
-});
-$('#point').click(function() {
-  write('.');
-});
-$('#plus').click(function() {
-  write('+');
-});
+
 //Onclick event for the equals button
 $('#equals').click(function() {
   //Evaluate the mathematical expression in the string and assign it to total
